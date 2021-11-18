@@ -1,7 +1,4 @@
 package com.rapid.commerce.model;
-
-import org.springframework.data.annotation.Id;
-
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -35,6 +32,15 @@ public class Consumer {
     @JoinColumn(name = "consumer_id", referencedColumnName = "id")
     private List<ConsumerAddress> addressesList;
 
+    public Consumer(String id, String phoneNumber, String name, String email, LocalDate birthday, UUID uuid, List<ConsumerAddress> addressesList) {
+        this.id = id;
+        this.phoneNumber = phoneNumber;
+        this.name = name;
+        this.email = email;
+        this.birthday = birthday;
+        this.uuid = uuid;
+        this.addressesList = addressesList;
+    }
 
     public String getId() {
         return id;

@@ -1,6 +1,7 @@
 package com.rapid.commerce.model;
 
 import javax.persistence.*;
+
 import javax.validation.constraints.NotBlank;
 
 @Entity
