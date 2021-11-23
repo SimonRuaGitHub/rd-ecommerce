@@ -42,6 +42,9 @@ public class Consumer {
         this.addressesList = addressesList;
     }
 
+    public Consumer() {
+    }
+
     public String getId() {
         return id;
     }
